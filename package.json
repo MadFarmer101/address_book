@@ -1,0 +1,18 @@
+{
+  "name": "address_book",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MadFarmer101/Address_Book.git",
+  "author": "Janko <mailodjanka@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^3.8.3"
+  },
+  "dependencies": {
+    "superstatic": "^6.0.4"
+  },
+  "scripts": {
+    "start": "superstatic src --port 3005",
+    "cy:open":"yarn start & cypress open"
+  }
+}
