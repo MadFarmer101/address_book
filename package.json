@@ -7,5 +7,12 @@
   "license": "MIT",
   "devDependencies": {
     "cypress": "^3.8.3"
+  },
+  "dependencies": {
+    "superstatic": "^6.0.4"
+  },
+  "scripts": {
+    "start": "superstatic src --port 3005",
+    "cy:open":"yarn start & cypress open"
   }
 }
