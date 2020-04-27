@@ -9,11 +9,12 @@
     "cypress": "^3.8.3"
   },
   "dependencies": {
+    "minimist": "1.2.5",
     "superstatic": "^6.0.4"
   },
   "scripts": {
     "start": "superstatic src --port 3005",
     "start:hot": "node server.js",
-    "cy:open":"yarn start & cypress open"
+    "cy:open": "yarn start & cypress open"
   }
 }
