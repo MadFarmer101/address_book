@@ -1,107 +1,110 @@
 body {
-    font-family: 'Permanent Marker', cursive;
-    background-color: antiquewhite;
-    color: saddlebrown;
-    margin: auto;
-    margin-top: 25px;
-    width: 30%;
-    border: 10px solid darkolivegreen;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
+  font-family: "Permanent Marker", cursive;
+  background-color: antiquewhite;
+  color: saddlebrown;
+  margin: auto;
+  margin-top: 25px;
+  width: 30%;
+  border: 10px solid darkolivegreen;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
 }
 
 input[type="text"] {
-    width: 90%;
-    padding: 12px 1px;
-    margin: 10px 0;
-    display: inline-block;
-    border: 5px solid darkolivegreen;
-    border-radius: 7px;
-    box-sizing: border-box;
-    outline: none;
-    text-align: center;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 22px;
-    color: saddlebrown;
+  width: 90%;
+  padding: 12px 1px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 5px solid darkolivegreen;
+  border-radius: 7px;
+  box-sizing: border-box;
+  outline: none;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 22px;
+  color: saddlebrown;
 }
 
 input[type="email"] {
-    width: 90%;
-    padding: 12px 1px;
-    margin: 10px 0;
-    display: inline-block;
-    border: 5px solid darkolivegreen;
-    border-radius: 7px;
-    box-sizing: border-box;
-    outline: none;
-    text-align: center;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 22px;
-    color: saddlebrown;
+  width: 90%;
+  padding: 12px 1px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 5px solid darkolivegreen;
+  border-radius: 7px;
+  box-sizing: border-box;
+  outline: none;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 22px;
+  color: saddlebrown;
 }
 
 textarea[type="text"] {
-    width: 90%;
-    padding: 12px 1px;
-    margin: 10px 0;
-    display: inline-block;
-    border: 5px solid darkolivegreen;
-    border-radius: 10px;
-    box-sizing: border-box;
-    outline: none; 
-    text-align: center;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 22px;
-    color: saddlebrown;
-
+  width: 90%;
+  padding: 12px 1px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 5px solid darkolivegreen;
+  border-radius: 10px;
+  box-sizing: border-box;
+  outline: none;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 22px;
+  color: saddlebrown;
 }
 
 button {
-    margin-bottom: 10px;
-    margin-right: 185px;
-    background-color:darkolivegreen;
-    border: solid saddlebrown;
-    color: whitesmoke;
-    padding: 10px 10px;
-    text-align: center;
-    display: inline-block;
-    font-family: 'Righteous', cursive;
-    font-size: 16px;
-    border-radius: 10px;
-    outline: none;
+  margin-bottom: 10px;
+  margin-right: 185px;
+  background-color: darkolivegreen;
+  border: solid saddlebrown;
+  color: whitesmoke;
+  padding: 10px 10px;
+  text-align: center;
+  display: inline-block;
+  font-family: "Righteous", cursive;
+  font-size: 16px;
+  border-radius: 10px;
+  outline: none;
 }
 
 button:hover {
-    background-color: saddlebrown;
-    border: solid darkolivegreen;
-    color: whitesmoke;
-    cursor: grab;
-    border-radius: 10px;
-    outline: none;
+  background-color: saddlebrown;
+  border: solid darkolivegreen;
+  color: whitesmoke;
+  cursor: grab;
+  border-radius: 10px;
+  outline: none;
 }
 
 input[type="submit"] {
-    margin-bottom: 10px;
-    margin-top: 20px;
-    margin-right: 185px;
-    background-color:darkolivegreen;
-    border: solid saddlebrown;
-    color: whitesmoke;
-    padding: 10px 10px;
-    text-align: center;
-    display: inline-block;
-    font-family: 'Righteous', cursive;
-    font-size: 16px;
-    border-radius: 10px;
-    outline: none;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-right: 185px;
+  background-color: darkolivegreen;
+  border: solid saddlebrown;
+  color: whitesmoke;
+  padding: 10px 10px;
+  text-align: center;
+  display: inline-block;
+  font-family: "Righteous", cursive;
+  font-size: 16px;
+  border-radius: 10px;
+  outline: none;
 }
 
 input[type="submit"]:hover {
-    background-color: saddlebrown;
-    border: solid darkolivegreen;
-    color: whitesmoke;
-    cursor: grab;
-    border-radius: 10px;
-    outline: none;
+  background-color: saddlebrown;
+  border: solid darkolivegreen;
+  color: whitesmoke;
+  cursor: grab;
+  border-radius: 10px;
+  outline: none;
+}
+
+#delete {
+  border-color: salmon;
 }

@@ -1,68 +1,73 @@
-const  storage = window.localStorage
+const storage = window.localStorage;
 
-const  renderContacts = () => {
-  const  contacts = JSON.parse(storage.getItem('contacts'))
+const renderContacts = () => {
+  const contacts = JSON.parse(storage.getItem("contacts"));
 
-  let  div = document.querySelector('#contact-list')
+  let div = document.querySelector("#contact-list");
   if (contacts) {
-	div.innerHTML = ''
-	const  ul = document.createElement('ul')
+    div.innerHTML = "";
+    const ul = document.createElement("ul");
 
-	contacts.forEach(contact  => {
-		let  li = document.createElement('li')
+    contacts.forEach((contact) => {
+      let li = document.createElement("li");
 
-		li.innerHTML = `
+      li.innerHTML = `
 		  <span>${contact.name}</span> |
 		  <span>${contact.email}</span> |
-		  <span>${contact.phone}</span>
-	    `
-	    ul.appendChild(li)
-	  })
-			
-	  div.appendChild(ul)
-	} else {
-	  div.innerHTML = '<p>You have no contacts in your address book</p>'
-	}
-}
-document.addEventListener('DOMContentLoaded', () => {
-	renderContacts()
-    const  contactForm = document.getElementById('new-contact-form')
-    const toggleFormVisibilityButton = document.getElementById('add-contact')
-    contactForm.style.display = 'none'
+          <span>${contact.phone}</span> <button id="delete">X</button>
+       
+	    `;
+      ul.appendChild(li);
+    });
 
-    toggleFormVisibilityButton.addEventListener('click', () => {
-        if (contactForm.style.display === '') {
-            contactForm.style.display ='none'
-        } else {
-            contactForm.style.display = ''
-        }
-    })
+    div.appendChild(ul);
+  } else {
+    div.innerHTML = "<p>You have no contacts in your address book</p>";
+  }
+};
+document.addEventListener("DOMContentLoaded", () => {
+  renderContacts();
+  const contactForm = document.getElementById("new-contact-form");
+  const toggleFormVisibilityButton = document.getElementById("add-contact");
+  contactForm.style.display = "none";
 
-    
-	contactForm.addEventListener('submit', event  => {
-		event.preventDefault()
+  toggleFormVisibilityButton.addEventListener("click", () => {
+    if (contactForm.style.display === "") {
+      contactForm.style.display = "none";
+    } else {
+      contactForm.style.display = "";
+    }
+  });
 
-	
-		const { name, email, phone, company, notes, twitter } = contactForm.elements
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-		const  contact = {
-			name:  name.value,
-			email:  email.value,
-			phone:  phone.value,
-			company:  company.value,
-			notes:  notes.value,
-			twitter:  twitter.value,
-		}
+    const {
+      name,
+      email,
+      phone,
+      company,
+      notes,
+      twitter,
+    } = contactForm.elements;
 
-		console.log(contact)
+    const contact = {
+      name: name.value,
+      email: email.value,
+      phone: phone.value,
+      company: company.value,
+      notes: notes.value,
+      twitter: twitter.value,
+    };
 
-		let  contacts = JSON.parse(storage.getItem('contacts')) || []
+    console.log(contact);
 
-		contacts.push(contact)
+    let contacts = JSON.parse(storage.getItem("contacts")) || [];
 
-		
-		storage.setItem('contacts', JSON.stringify(contacts))
-		renderContacts()
-		contactForm.reset()
-   })
-})
+    contacts.push(contact);
+
+    storage.setItem("contacts", JSON.stringify(contacts));
+    renderContacts();
+    contactForm.reset();
+  });
+});
