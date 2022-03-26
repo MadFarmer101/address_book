@@ -9,7 +9,7 @@
     "cypress": "^3.8.3"
   },
   "dependencies": {
-    "minimist": "1.2.5",
+    "minimist": "1.2.6",
     "superstatic": "^6.0.4"
   },
   "scripts": {
